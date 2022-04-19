@@ -1,5 +1,5 @@
 {% set name = "influxdb-client" %}
-{% set version = "1.27.0" %}
+{% set version = "1.28.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/influxdb_client-{{ version }}.tar.gz
-  sha256: ac3ff734a83dc542944de15c81001a5a410ae4ae4b2722efefc1bf722c960975
+  sha256: 3f1d742541fa0cdcd3b333c8f362b5ef707d186977d6d17dd85dba4cc5c0a790
 
 build:
   number: 0
