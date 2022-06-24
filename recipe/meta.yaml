@@ -23,7 +23,6 @@ requirements:
     - certifi >=14.05.14
     - python >=3.6
     - python-dateutil >=2.5.3
-    - pytz >=2019.1
     - rx >=3.0.1
     - setuptools >=21.0.0
     - six >=1.10
