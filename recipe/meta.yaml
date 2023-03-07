@@ -1,6 +1,5 @@
 {% set name = "influxdb-client" %}
-{% set version = "1.31.0" %}
-
+{% set version = "1.36.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,30 +7,28 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/influxdb_client-{{ version }}.tar.gz
-  sha256: adf6dfdf35f7c39cf543b243359d2c0ae79fc462f1ef57a09d0f1623f181796d
+  sha256: 59654af4f7133f0ecf916411935b50f42e5c4bc125d218e193848f3615b57bfc
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
+    - python >=3.7
     - pip
-    - python >=3.6
   run:
+    - python >=3.7
+    - reactivex >=4.0.4
     - certifi >=14.05.14
-    - python >=3.6
     - python-dateutil >=2.5.3
-    - rx >=3.0.1
     - setuptools >=21.0.0
-    - six >=1.10
-    - urllib3 >=1.15.1
+    - urllib3 >=1.26.0
 
 test:
   imports:
     - influxdb_client
-    - influxdb_client.client
   commands:
     - pip check
   requires:
