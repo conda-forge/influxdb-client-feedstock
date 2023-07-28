@@ -1,11 +1,11 @@
-About influxdb-client
-=====================
+About influxdb-client-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/influxdb-client-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/influxdata/influxdb-client-python
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/influxdb-client-feedstock/blob/main/LICENSE.txt)
 
 Summary: InfluxDB 2.0 Python client library
 
@@ -143,5 +143,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@djhoese](https://github.com/djhoese/)
 * [@ruben-arts](https://github.com/ruben-arts/)
 
